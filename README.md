@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Clean Template
 
-## Getting Started
+Um template **clean** e minimalista do Next.js — ideal para iniciar novos projetos com uma base consistente e organizada.
 
-First, run the development server:
+## 🧱 Estrutura do projeto
+
+```
+.
+├── src/
+│   ├── app/               # Estrutura App Router do Next.js
+│   ├── components/        # Componentes reutilizáveis
+│   ├── lib/               # Funções helpers e utilitárias
+│   ├── styles/            # Estilos globais (Tailwind ou CSS)
+│   └── types/             # Tipos TypeScript globais
+│
+├── .eslintrc.json         # Configuração do ESLint
+├── .prettierrc            # Configuração do Prettier
+├── .prettierignore         # Arquivos ignorados pelo Prettier
+├── tsconfig.json           # Configuração do TypeScript
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Tecnologias incluídas
+
+- 🟦 **Next.js** (versão mais recente)
+- ⚡ **TypeScript**
+- 💅 **Prettier** — formatação de código automática
+- 🧹 **ESLint** — análise estática e boas práticas
+- 🎨 **Tailwind CSS** (opcional)
+
+---
+
+## 🧰 Como usar este template
+
+### 1️⃣ Criar novo projeto a partir deste template
+
+```bash
+npx create-next-app@latest -e https://github.com/SEU_USUARIO/nextjs-clean-template nome-do-projeto
+```
+
+ou com **pnpm**:
+
+```bash
+pnpm create next-app -e https://github.com/SEU_USUARIO/nextjs-clean-template nome-do-projeto
+```
+
+---
+
+### 2️⃣ Instalar dependências
+
+```bash
+npm install
+# ou
+pnpm install
+# ou
+yarn install
+```
+
+---
+
+### 3️⃣ Rodar o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
+# ou
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O servidor será iniciado em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Padrões de código
 
-## Learn More
+O template já vem configurado para funcionar com **Prettier + ESLint**.  
+O VSCode irá formatar automaticamente os arquivos ao salvar.
 
-To learn more about Next.js, take a look at the following resources:
+### `.prettierrc`
+```json
+{
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "printWidth": 100
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `.prettierignore`
+```
+node_modules
+.next
+dist
+build
+coverage
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Sugestão de extensões do VSCode
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Extensão | ID |
+|-----------|--------------------------------|
+| Prettier | `esbenp.prettier-vscode` |
+| Tailwind CSS IntelliSense | `bradlc.vscode-tailwindcss` |
+| ESLint | `dbaeumer.vscode-eslint` |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 💡 Dica
+
+Se o Prettier não estiver formatando automaticamente, verifique no VSCode:
+1. O Prettier está instalado (`esbenp.prettier-vscode`)?  
+2. O arquivo `.prettierrc` existe na raiz do projeto?  
+3. `"editor.formatOnSave": true` está ativo nas configurações?  
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT — sinta-se livre para usar e modificar.
+
+---
+
+Feito com ❤️ por [Seu Nome]
