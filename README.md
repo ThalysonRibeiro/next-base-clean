@@ -38,13 +38,13 @@ Um template **clean** e minimalista do Next.js — ideal para iniciar novos proj
 ### 1️⃣ Criar novo projeto a partir deste template
 
 ```bash
-npx create-next-app@latest -e https://github.com/SEU_USUARIO/next-base-clean nome-do-projeto
+npx create-next-app@latest -e https://github.com/ThalysonRibeiro/next-base-clean nome-do-projeto
 ```
 
 ou com **pnpm**:
 
 ```bash
-pnpm create next-app -e https://github.com/SEU_USUARIO/nextjs-clean-template nome-do-projeto
+pnpm create next-app -e https://github.com/ThalysonRibeiro/nextjs-clean-template nome-do-projeto
 ```
 
 ---
