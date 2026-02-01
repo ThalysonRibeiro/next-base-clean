@@ -44,7 +44,7 @@ npx create-next-app@latest -e https://github.com/ThalysonRibeiro/next-base-clean
 ou com **pnpm**:
 
 ```bash
-pnpm create next-app -e https://github.com/ThalysonRibeiro/nextjs-clean-template nome-do-projeto
+pnpm create next-app -e https://github.com/ThalysonRibeiro/nextjs-clean nome-do-projeto
 ```
 
 ---
